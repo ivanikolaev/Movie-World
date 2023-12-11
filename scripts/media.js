@@ -15,7 +15,6 @@ document.addEventListener('keydown', event => {
         activeContent.style.display = "none";
 })
 
-
 function changeContent(number, bg) {
     activeImage.style.background = `url("./img/${bg}") no-repeat`;
     activeImage.style.backgroundSize = 'cover';
@@ -23,3 +22,4 @@ function changeContent(number, bg) {
     activeTitle.textContent = document.querySelector('.article' + number).textContent;
     activeArticle.innerHTML = document.querySelector('.content' + number).innerHTML;
 }
+
