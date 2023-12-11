@@ -173,7 +173,7 @@
     border: 2px solid goldenrod;
 }
 
-@media screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
     .banner {
         flex-direction: column;
     }
@@ -194,13 +194,13 @@
     }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .content {
         width: 80%;
     }
 }
 
-@media screen and (max-width: 615px) {
+@media (max-width: 615px) {
     .content p {
         font-size: 1.1rem;
     }

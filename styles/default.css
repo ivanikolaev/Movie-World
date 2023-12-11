@@ -22,14 +22,14 @@
     box-shadow: 0 0 40px var(--color_green);
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .default, .default-button {
         font-size: 1.4rem;
         margin: 50px auto;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .default, .default-button {
         font-size: 1rem;
     }

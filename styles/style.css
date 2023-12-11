@@ -124,19 +124,19 @@ header .logo {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
     nav ul li {
         font-size: 0.9rem;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     header {
         background: #050505;
     }
 }
 
-@media screen and (max-width: 400px){
+@media (max-width: 400px){
     nav ul {
         width: 100dvw;
         left: 0;
@@ -320,7 +320,7 @@ main {
     text-align: center;
 }
 
-@media screen and (max-width: 1300px) {
+@media (max-width: 1300px) {
     .slider-container {
         width: 80dvw;
         margin: 0 auto 5%;
@@ -330,7 +330,7 @@ main {
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media (max-width: 1200px) {
     .content .info {
         font-size: 0.9rem;    
     }
@@ -339,7 +339,7 @@ main {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
     .title {
         font-size: 1.7rem;
     }
@@ -361,7 +361,7 @@ main {
     }
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 900px) {
     .title {
         font-size: 1.5rem;
     }
@@ -376,7 +376,7 @@ main {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
     .title {
         font-size: 1.4rem;
     }
@@ -398,7 +398,7 @@ main {
     }
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
     .title {
         font-size: 1.2rem;
     }
@@ -416,7 +416,7 @@ main {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
     .title {
         font-size: 1rem;
     }
@@ -438,7 +438,7 @@ main {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media (max-width: 500px) {
     .title {
         font-size: 0.8rem;
     }
@@ -460,7 +460,7 @@ main {
     }
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 400px) {
     .title {
         font-size: 0.6rem;
     }
@@ -744,7 +744,7 @@ main {
     color: var(--color_green);   
 }
 
-@media screen and (max-width: 1000px){
+@media (max-width: 1000px){
     .glass-card {
         height: 30dvh;
     }
@@ -753,7 +753,7 @@ main {
     }
 }
 
-@media screen and (max-width: 800px){
+@media (max-width: 800px){
     .glass-card {
         height: 25dvh;
     }
@@ -762,7 +762,7 @@ main {
     }
 }
 
-@media screen and (max-width: 500px){
+@media (max-width: 500px){
     .glass-card {
         height: 20dvh;
     }
@@ -810,34 +810,34 @@ main {
 
 	.section-1 {
 		grid-area: section-1;
-		@media screen and (min-width: 600px) {
+		@media (min-width: 600px) {
 			text-align: left;
 		}
 	}
 
 	.section-2 {
 		grid-area: section-2;
-		@media screen and (min-width: 600px) {
+		@media (min-width: 600px) {
 			text-align: left;
 		}
-		@media screen and (min-width: 1000px) {
+		@media (min-width: 1000px) {
 			text-align: center;
 		}
 	}
 
 	.section-3 {
 		grid-area: section-3;
-		@media screen and (min-width: 600px) {
+		@media (min-width: 600px) {
 			text-align: center;
 		}
-		@media screen and (min-width: 1000px) {
+		@media (min-width: 1000px) {
 			text-align: right;
 		}
 	}
 
 	.copyright {
 		grid-area: copyright;
-		@media screen and (min-width: 600px) {
+		@media (min-width: 600px) {
 			text-align: left;
 		}
 	}
