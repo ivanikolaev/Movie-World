@@ -1,0 +1,266 @@
+.media-title {
+    color: aliceblue;
+    margin: 40px 0 10px;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+    text-shadow: 0 0 20px black, 0 0 40px black;
+}
+
+.media-container {
+    position: relative;
+    display: grid;
+    gap: 12px;
+    margin: 40px;
+    padding: 0;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(5, auto);
+    grid-template-areas: 
+        "one   one   two  three three"
+        "four five   two  six   seven"
+        "four eight eight six   seven"
+        "ten  nine  nine  nine  seven";
+}
+
+.media {
+    position: relative;
+    width: auto;
+    overflow: hidden;
+    transition: all .5s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-wrap: break-word;
+    text-align: center;
+    box-shadow: inset 0 0 5px aliceblue;
+    padding: 10px;
+}
+
+.media h1 {
+    width: 100%;
+}
+
+.media:hover {
+    transform: scale(1.05);
+}
+
+.article1 {
+    grid-area: one;
+    background: #00203FFF;
+    color: #ADEFD1FF;
+}
+
+.article2 {
+    grid-area: two;
+    background: #00539CFF;
+    color: #EEA47FFF;
+}
+
+.article3 {
+    grid-area: three;
+    background: #101820FF;
+    color: #F2AA4CFF;
+}
+
+.article4 {
+    grid-area: four;
+    background: #101820FF;
+    color: #F2AA4CFF;
+}
+
+.article5 {
+    grid-area: five;
+    background: #2D2926FF;
+    color: #E94B3CFF;
+}
+
+.article6 {
+    grid-area: six;
+    background: #2D2926FF;
+    color: #E94B3CFF;
+}
+
+.article7 {
+    grid-area: seven;
+    background: #00539CFF;
+    color: #EEA47FFF;
+}
+
+.article8 {
+    grid-area: eight;
+    background: #00203FFF;
+    color: #ADEFD1FF;
+}
+
+.article9 {
+    grid-area: nine;
+    background: #101820FF;
+    color: #F2AA4CFF;
+}
+
+.article10 {
+    grid-area: ten;
+    background: #00539CFF;
+    color: #EEA47FFF;
+}
+
+.active-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    color: aliceblue;
+}
+
+.close-button {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.close-button:hover {
+    color: red;
+}
+
+.active-image {
+    width: 40dvw;
+    margin-top: 20px;
+    aspect-ratio: 1/2;
+    max-height: 35dvh;
+}
+
+.active-title {
+    display: block;
+    width: 90%;
+    color: antiquewhite;
+    padding: 10px 0;
+    border-top: 3px solid antiquewhite;
+    border-bottom: 3px solid antiquewhite;
+}
+
+.active-article {
+    display: block;
+    text-align: justify;
+    line-height: 2em;
+    padding-right: 16px;
+    width: 60%;
+    font-size: 1.25rem;
+    overflow-x: visible;
+    overflow-y: scroll;
+    margin-bottom: 30px;
+    
+}
+
+.active-article::-webkit-scrollbar {
+    width: 10px;
+}
+
+.active-article::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.active-article::-webkit-scrollbar-thumb {
+    background: antiquewhite;
+    border-radius: 5px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .media-container {
+        grid-template-areas: 
+        "one   one   two  three"
+        "four five   two  six"
+        "four eight eight six"
+        "ten  nine  nine  seven";
+    }
+    .media h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .media-container {
+        margin: 30px;
+        grid-template-areas: 
+        "one   one   two"
+        "four three   two"
+        "four five five"
+        "six seven eight"
+        "ten  seven  nine";
+    }
+    
+    .active-title {
+        font-size: 1.5rem;
+    }
+
+    .active-article {
+        font-size: 1.1rem;
+        width: 75%;
+        text-align: center;
+    }
+
+    .active-image {
+        width: 90dvw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .media-container {
+        transform: translateX(7%);
+        margin: 20px;
+        grid-template-areas: 
+        "one   six"
+        "two six"
+        "two seven"
+        "three  eight"
+        "four nine"
+        "four ten"
+        "five ten";
+    }
+
+    .media h1 {
+        font-size: 1.2rem;
+    }
+    
+    .media-title {
+        font-size: 1.25rem;
+    }
+
+    .active-article {
+        font-size: 1.25rem;
+    }
+
+    .active-article {
+        font-size: 1rem;
+        width: 90%;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .media h1 {
+        font-size: 1rem;
+    }
+
+    .media-title {
+        font-size: 1.1rem;
+    }
+}

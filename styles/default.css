@@ -1,0 +1,36 @@
+.default {
+    margin: 100px auto;
+    color: antiquewhite;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.default-button {
+    margin: 100px auto;
+    padding: 3dvh 5dvw;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.8rem;
+    color: var(--color_darkblue);
+    background-color: #111;
+    transition: all .3s ease;
+}
+
+.default-button:hover {
+    color: var(--color_green);
+    box-shadow: 0 0 40px var(--color_green);
+}
+
+@media screen and (max-width: 1000px) {
+    .default, .default-button {
+        font-size: 1.4rem;
+        margin: 50px auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .default, .default-button {
+        font-size: 1rem;
+    }
+}

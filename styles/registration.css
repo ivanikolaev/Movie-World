@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('../img/login_bg.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.form-box{
+    position: relative;
+    padding: 20px;
+    width: 60%;
+    height: clamp(450px, 30%, 700px);
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    z-index: 5;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+.form-value {
+    z-index: 4;
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.mail {
+    grid-area: 1/1/2/2;
+}
+
+.pass {
+    grid-area: 2/1/3/2;
+}
+
+.login {
+    grid-area: 1/2/2/3;
+}
+
+.tel {
+    grid-area: 2/2/3/3;
+}
+
+.inputbox{
+    position: relative;
+    margin: 30px 20px;
+    width: auto;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .35s;
+}
+
+input:focus ~ label, input:not(:placeholder-shown) ~ label{
+    top: -5px;
+}
+
+input:hover ~ label{
+    text-shadow: 0 0 5px black, 0 0 20px black, 0 0 30px black;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+.forget{
+    margin: -15px 0 15px ;
+    font-size: .9em;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget label input{
+    margin-right: 3px;
+
+}
+
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 100px;
+}
+
+.forget label a:hover{
+    text-decoration: underline;
+}
+
+button{
+    grid-area: 3/1/4/3;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.4em;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+button:hover {
+    transition: 0.3s;
+    box-shadow: 0 0 10px black;
+}
+
+.register{
+    grid-area: 4/1/5/3;
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.register p a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+    form {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .tel {
+        grid-area: 4/1/5/2;
+    }
+
+    .login {
+        grid-area: 3/1/4/2;
+    }
+
+    button {
+        grid-area: 5/1/6/2;
+    }
+    
+    .register {
+        grid-area: 6/1/7/2;
+    }
+}
+
+@media (max-width: 450px) {
+    .form-box {
+        width: 90dvw;
+    }
+}

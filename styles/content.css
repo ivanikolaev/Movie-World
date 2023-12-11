@@ -1,0 +1,231 @@
+.films-title {
+    margin: 20px auto;
+    color: aliceblue;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 100dvh;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 0.5s;
+    font-family: 'Old Standart TT', serif;
+}
+
+.films-banner {
+    background: url('../img/one_plus_one_bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.series-banner {
+    background: url('../img/game_of_thrones_bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cartoons-banner {
+    background: url('../img/smeshariki_bg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.banner::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.content {
+    position: relative;
+    max-width: 650px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    transition: all .5s ease;
+    border-radius: 15px;
+    margin-bottom: 80px;
+}
+
+.content.active {
+    display: block;
+    transition: all .5s ease;
+}
+
+.title {
+    color: antiquewhite;
+    text-align: center;
+    width: 100%;
+    font-size: 3.5rem;
+    text-shadow: 0 0 40px antiquewhite;
+}
+
+.content h4 {
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+}
+
+.content span {
+    padding: 0 20px;
+    text-align: center;
+    border-right: 2px solid aliceblue;
+}
+
+.content span:first-child {
+    padding-left: 0;
+}
+
+.content span:last-child {
+    border-right: none;
+}
+
+.content span i {
+    background: salmon;
+    padding: 0 5px;
+    border-radius: 5px;
+}
+
+.content p {
+    color: aliceblue;
+    text-shadow: 0 0 25px black;
+    text-align: justify;
+    font-size: 1.25rem;
+    line-height: 1.5em;
+    margin: 0 0 15px 10px;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.content a {
+    color: aliceblue;
+    display: inline-block;
+    width: 98%;
+    text-align: center;
+    text-decoration: none;
+    background: salmon;
+    border-radius: 5px;
+    margin: 5px 20px;
+    padding: 10px;
+    font-size: 1.25rem;
+    font-weight: bolder;
+    transition: all .3s ease;
+}
+
+.content a:hover {
+    background: orangered;
+}
+
+.carousel-box {
+    position: relative;
+    min-width: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 50px black;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+}
+
+.carousel {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    -webkit-perspective: 600px;
+    perspective: 600px;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+}
+
+.carousel .carousel-item {
+    visibility: hidden;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.carousel .carousel-item img {
+    max-width: 235px;
+    width: 100%;
+    aspect-ratio: 11 / 16;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5%;
+    border: 2px solid goldenrod;
+}
+
+@media screen and (max-width: 1300px) {
+    .banner {
+        flex-direction: column;
+    }
+    .content {
+        margin-bottom: 20px;
+        margin-left: 0;
+        padding: 0;
+    }
+    .content p {
+        padding: 0;
+        margin: 0 0 10px;
+    }
+    .content a {
+        margin: 0;
+    }
+    .carousel-box {
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .content p {
+        font-size: 1.1rem;
+    }
+
+    .content a {
+        font-size: 1.1rem;
+    }
+
+    .content h4 {
+        font-size: 1.7rem;
+    }
+
+    .content .title {
+        font-size: 2.5rem;
+    }
+
+    .carousel-box {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        width: 45dvw !important;
+    }
+
+    .carousel-item {
+        left: 30px !important;
+    }
+}

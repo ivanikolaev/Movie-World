@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/fav.png" type="image/png">
+    <link rel="stylesheet" href="styles/registration.css">
+    <title>Регистрация</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="form-box">
+            <h2>Регистрация</h2>
+                <form action="" method="get">
+
+                    <div class="inputbox mail">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="email" placeholder=" " required>
+                        <label for="">Адрес эл. почты</label>
+                    </div>
+
+                    <div class="inputbox pass">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input type="password" placeholder=" " required>
+                        <label for="">Пароль</label>
+                    </div>
+
+                    <div class="inputbox tel">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <input type="tel" placeholder=" " required>
+                        <label for="">Телефон</label>
+                    </div>
+
+                    <div class="inputbox login">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" placeholder=" " required>
+                        <label for="">Логин</label>
+                    </div>
+
+
+                    <button onclick="login()">Продолжить</button>
+                    <div class="register">
+                        <p>Есть аккаунт? <a href="login.html">Войти</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
+</html>

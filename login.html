@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/fav.png" type="image/png">
+    <link rel="stylesheet" href="styles/login.css">
+    <title>Вход в аккаунт</title>
+</head>
+
+<body>
+    <section>
+        <div class="form-box">
+            <h2>Войти в аккаунт</h2>
+                <form action="" method="get">
+
+                    <div class="inputbox login">
+                        <ion-icon name="person-outline"></ion-icon>
+                        <input type="text" placeholder=" " required>
+                        <label for="">Логин</label>
+                    </div>
+
+                    <div class="inputbox pass">
+                      <ion-icon name="lock-closed-outline"></ion-icon>
+                      <input type="password" placeholder=" " required>
+                      <label for="">Пароль</label>
+                  </div>
+
+                    <button onclick="login()">Продолжить</button>
+                    <div class="register">
+                        <p>Нет аккаунта? <a href="registration.html">Регистрация</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="scripts/login.js"></script>
+</body>
+</html>
