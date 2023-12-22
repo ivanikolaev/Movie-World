@@ -138,7 +138,7 @@ header .logo {
 
 @media (max-width: 400px){
     nav ul {
-        width: 100dvw;
+        width: 100vw;
         left: 0;
     }
 }
@@ -203,12 +203,12 @@ main {
 }
 
 .marquee a {
-    width: 100dvw;
+    width: 100vw;
 }
 
 .marquee img {
     border: 1px solid goldenrod;
-    width: 9dvw;
+    width: 9vw;
     object-fit: fill;
     border-radius: 6%;
     aspect-ratio: 11/16;
@@ -221,26 +221,26 @@ main {
 
 @keyframes marquee-animation {
     0% {
-        transform: translateX(0dvw);
+        transform: translateX(0vw);
     }
     25% {
-        transform: translateX(-32dvw);
+        transform: translateX(-32vw);
     }
     50% {
-        transform: translateX(0dvw);
+        transform: translateX(0vw);
     }
     75% {
-        transform: translateX(32dvw);
+        transform: translateX(32vw);
     }
     100% {
-        transform: translateX(0dvw);
+        transform: translateX(0vw);
     }
 }
 
 .slider-container {
     position: relative;
     margin: 0 15% 5% 15%;
-    height: 50dvh;
+    height: 50vh;
     box-shadow: 0 0 65px black;
 }
 
@@ -322,7 +322,7 @@ main {
 
 @media (max-width: 1300px) {
     .slider-container {
-        width: 80dvw;
+        width: 80vw;
         margin: 0 auto 5%;
     }
     .content .info {
@@ -335,7 +335,7 @@ main {
         font-size: 0.9rem;    
     }
     .content p, h1 {
-        width: 30dvw;
+        width: 30vw;
     }
 }
 
@@ -347,7 +347,7 @@ main {
         font-size: 1.3rem;
     }
     .slider-container {
-        height: 45dvh;
+        height: 45vh;
     }
     .content .info {
         font-size: 0.8rem;
@@ -357,7 +357,7 @@ main {
     }
     .catalog a, .catalog p {
         font-size: 1rem !important;
-        height: 20dvh !important;
+        height: 20vh !important;
     }
 }
 
@@ -369,7 +369,7 @@ main {
         font-size: 1.1rem;
     }
     .slider-container {
-        height: 40dvh;
+        height: 40vh;
     }
     .content .info {
         font-size: 0.75rem;
@@ -384,7 +384,7 @@ main {
         font-size: 1rem;
     }
     .slider-container {
-        height: 35dvh;
+        height: 35vh;
     }
     .content .info {
         font-size: 0.65rem;
@@ -394,7 +394,7 @@ main {
     }
     .catalog a, .catalog p {
         font-size: 0.8rem !important;
-        height: 15dvh !important;
+        height: 15vh !important;
     }
 }
 
@@ -406,7 +406,7 @@ main {
         font-size: 0.8rem;
     }
     .slider-container {
-        height: 30dvh;
+        height: 30vh;
     }
     .content .info {
         font-size: 0.59rem;
@@ -424,7 +424,7 @@ main {
         font-size: 0.8rem;
     }
     .slider-container {
-        height: 27dvh;
+        height: 27vh;
     }
     .content .info {
         font-size: 0.5rem;
@@ -434,7 +434,7 @@ main {
     }
     .catalog a, .catalog p {
         font-size: 0.5rem !important;
-        height: 12dvh !important;
+        height: 12vh !important;
     }
 }
 
@@ -446,7 +446,7 @@ main {
         font-size: 0.7rem;
     }
     .slider-container {
-        height: 22dvh;
+        height: 22vh;
     }
     .content .info {
         font-size: 0.4rem;
@@ -456,7 +456,7 @@ main {
     }
     .catalog a, .catalog p {
         font-size: 0.35rem !important;
-        height: 9dvh !important;
+        height: 9vh !important;
     }
 }
 
@@ -468,7 +468,7 @@ main {
         font-size: 0.5rem;
     }
     .slider-container {
-        height: 20dvh;
+        height: 20vh;
     }
     .content .info {
         font-size: 0.35rem;
@@ -598,8 +598,8 @@ main {
 }
 
 .glass-card {
-    width: 20dvw;
-    height: 50dvh;
+    width: 20vw;
+    height: 50vh;
     position: relative;
 }
 
@@ -746,7 +746,7 @@ main {
 
 @media (max-width: 1000px){
     .glass-card {
-        height: 30dvh;
+        height: 30vh;
     }
     .glass-content, .glass-button {
         font-size: 0.7rem;
@@ -755,7 +755,7 @@ main {
 
 @media (max-width: 800px){
     .glass-card {
-        height: 25dvh;
+        height: 25vh;
     }
     .glass-content, .glass-button {
         font-size: 0.5rem;
@@ -764,7 +764,7 @@ main {
 
 @media (max-width: 500px){
     .glass-card {
-        height: 20dvh;
+        height: 20vh;
     }
     .glass-content, .glass-button {
         font-size: 0.4rem;
@@ -828,8 +828,6 @@ main {
 	.section-3 {
 		grid-area: section-3;
         width: 100%;
-        height: 100%;
-        font-size: 1rem;
         line-height: 2em;
 		@media (min-width: 600px) {
 			text-align: center;
