@@ -320,7 +320,7 @@ main {
     text-align: center;
 }
 
-/* @media (max-width: 1300px) {
+@media (max-width: 1300px) {
     .slider-container {
         width: 80vw;
         margin: 0 auto 5%;
@@ -476,7 +476,7 @@ main {
     .slider-container button {
         font-size: 0.4rem;
     }
-} */
+}
 
 .catalog-title {
     margin: 20px 0;
@@ -744,7 +744,7 @@ main {
     color: var(--color_green);   
 }
 
-/* @media (max-width: 1000px){
+@media (max-width: 1000px){
     .glass-card {
         height: 30vh;
     }
@@ -769,7 +769,7 @@ main {
     .glass-content, .glass-button {
         font-size: 0.4rem;
     }
-} */
+}
 
 .footer-wrapper {
 	background-color: #222;
