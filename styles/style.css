@@ -787,7 +787,7 @@ main {
 	max-height: min-content;
 	width: inherit;
 
-    @media (min-width: 600px) {
+    @media (min-width: 768px) {
         grid-template-areas:
             "section-1 section-1"
             "section-2 section-3"
@@ -810,14 +810,14 @@ main {
 
 	.section-1 {
 		grid-area: section-1;
-		@media (min-width: 600px) {
+		@media (min-width: 768px) {
 			text-align: left;
 		}
 	}
 
 	.section-2 {
 		grid-area: section-2;
-		@media (min-width: 600px) {
+		@media (min-width: 768px) {
 			text-align: left;
 		}
 		@media (min-width: 1000px) {
@@ -828,8 +828,7 @@ main {
 	.section-3 {
 		grid-area: section-3;
         width: 100%;
-        font-size: 16px;
-		@media (min-width: 600px) {
+		@media (min-width: 768px) {
 			text-align: center;
 		}
 		@media (min-width: 1000px) {
@@ -839,7 +838,7 @@ main {
 
 	.copyright {
 		grid-area: copyright;
-		@media (min-width: 600px) {
+		@media (min-width: 768px) {
 			text-align: left;
 		}
 	}
