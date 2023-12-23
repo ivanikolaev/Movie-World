@@ -320,7 +320,7 @@ main {
     text-align: center;
 }
 
-@media (max-width: 1300px) {
+/* @media (max-width: 1300px) {
     .slider-container {
         width: 80vw;
         margin: 0 auto 5%;
@@ -476,7 +476,7 @@ main {
     .slider-container button {
         font-size: 0.4rem;
     }
-}
+} */
 
 .catalog-title {
     margin: 20px 0;
@@ -744,7 +744,7 @@ main {
     color: var(--color_green);   
 }
 
-@media (max-width: 1000px){
+/* @media (max-width: 1000px){
     .glass-card {
         height: 30vh;
     }
@@ -769,7 +769,7 @@ main {
     .glass-content, .glass-button {
         font-size: 0.4rem;
     }
-}
+} */
 
 .footer-wrapper {
 	background-color: #222;
@@ -787,19 +787,6 @@ main {
 	max-height: min-content;
 	width: inherit;
 
-    @media (min-width: 768px) {
-        grid-template-areas:
-            "section-1 section-1"
-            "section-2 section-3"
-            "copyright social";
-    }
-
-    @media (min-width: 1000px) {
-        grid-template-areas:
-            "section-1 section-2 section-3"
-            "copyright social social";
-    }
-
 	& > div {
 		padding: 0;
         margin: 2%;
@@ -810,37 +797,19 @@ main {
 
 	.section-1 {
 		grid-area: section-1;
-		@media (min-width: 768px) {
-			text-align: left;
-		}
 	}
 
 	.section-2 {
 		grid-area: section-2;
-		@media (min-width: 768px) {
-			text-align: left;
-		}
-		@media (min-width: 1000px) {
-			text-align: center;
-		}
 	}
 
 	.section-3 {
 		grid-area: section-3;
         width: 100%;
-		@media (min-width: 768px) {
-			text-align: center;
-		}
-		@media (min-width: 1000px) {
-			text-align: right;
-		}
 	}
 
 	.copyright {
 		grid-area: copyright;
-		@media (min-width: 768px) {
-			text-align: left;
-		}
 	}
 }
 
@@ -926,4 +895,45 @@ footer a:hover {
 }
 .vk::before {
     background: radial-gradient(circle at 10% 20%, rgba(6, 0, 255, 0.61) 0%, rgb(191, 0, 255) 100.7%);
+}
+
+@media (min-width: 600px) {
+    .footer-wrapper {
+        grid-template-areas:
+        "section-1 section-1"
+        "section-2 section-3"
+        "copyright social";
+    }
+
+    .section-1 {
+        text-align: left !important;
+    }
+
+    .section-2 {
+        text-align: left;
+    }
+
+    .section-3 {
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: left !important;
+    }
+}
+
+@media (min-width: 1000px) {
+    .footer-wrapper {
+        grid-template-areas:
+            "section-1 section-2 section-3"
+            "copyright social social";
+    }
+
+    .section-2 {
+        text-align: center;
+    }
+
+    .section-3 {
+        text-align: right;
+    }
 }
