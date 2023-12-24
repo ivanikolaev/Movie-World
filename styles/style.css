@@ -440,39 +440,14 @@ main {
     .slider-container button {
         font-size: 0.65rem;
     }
+
     .catalog a, .catalog p {
-        font-size: 0.5rem !important;
+        font-size: 0.7rem !important;
         height: 12vh !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
     }
 }
-
-/* @media (max-width: 500px) {
-    .slider-container {
-        height: 22vh;
-    }
-    .content .info {
-        font-size: 0.4rem;
-    }
-    .slider-container button {
-        font-size: 0.5rem;
-    }
-    .catalog a, .catalog p {
-        font-size: 0.35rem !important;
-        height: 9vh !important;
-    }
-}
-
-@media (max-width: 400px) {
-    .slider-container {
-        height: 20vh;
-    }
-    .content .info {
-        font-size: 0.35rem;
-    }
-    .slider-container button {
-        font-size: 0.4rem;
-    }
-} */
 
 .catalog-title {
     margin: 20px 0;
