@@ -429,16 +429,16 @@ main {
     }
 
     .slider-container {
-        height: 25vh;
+        height: 24vh;
         width: 90vw;
     }
 
     .content .info {
-        font-size: 0.6rem;
+        font-size: 0.53rem;
     }
-    
+
     .slider-container button {
-        font-size: 0.6rem;
+        font-size: 0.65rem;
     }
     .catalog a, .catalog p {
         font-size: 0.5rem !important;
