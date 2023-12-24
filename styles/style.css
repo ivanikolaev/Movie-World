@@ -134,9 +134,7 @@ header .logo {
     header {
         background: #050505;
     }
-}
-
-@media (max-width: 400px){
+    
     nav ul {
         width: 100vw;
         left: 0;
@@ -219,6 +217,16 @@ main {
     transform: scale(1.1);
 }
 
+@media (max-width: 600px) {
+    .marquee img {
+        width: 18vw;
+    }
+
+    .marquee_animation {
+        animation: marquee-animation-small 20s linear infinite;
+    }    
+}
+
 @keyframes marquee-animation {
     0% {
         transform: translateX(0vw);
@@ -231,6 +239,24 @@ main {
     }
     75% {
         transform: translateX(32vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes marquee-animation-small {
+    0% {
+        transform: translateX(0vw);
+    }
+    25% {
+        transform: translateX(-100vw);
+    }
+    50% {
+        transform: translateX(0vw);
+    }
+    75% {
+        transform: translateX(100vw);
     }
     100% {
         transform: translateX(0vw);
@@ -362,12 +388,6 @@ main {
 }
 
 @media (max-width: 900px) {
-    .title {
-        font-size: 1.5rem;
-    }
-    .glass-end-title {
-        font-size: 1.1rem;
-    }
     .slider-container {
         height: 40vh;
     }
@@ -398,37 +418,25 @@ main {
     }
 }
 
-@media (max-width: 700px) {
-    .title {
-        font-size: 1.2rem;
-    }
-    .glass-end-title {
-        font-size: 0.8rem;
-    }
-    .slider-container {
-        height: 30vh;
-    }
-    .content .info {
-        font-size: 0.59rem;
-    }
-    .slider-container button {
-        font-size: 0.7rem;
-    }
-}
 
 @media (max-width: 600px) {
     .title {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
+
     .glass-end-title {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
+
     .slider-container {
-        height: 27vh;
+        height: 25vh;
+        width: 90vw;
     }
+
     .content .info {
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
+    
     .slider-container button {
         font-size: 0.6rem;
     }
@@ -438,13 +446,7 @@ main {
     }
 }
 
-@media (max-width: 500px) {
-    .title {
-        font-size: 0.8rem;
-    }
-    .glass-end-title {
-        font-size: 0.7rem;
-    }
+/* @media (max-width: 500px) {
     .slider-container {
         height: 22vh;
     }
@@ -461,12 +463,6 @@ main {
 }
 
 @media (max-width: 400px) {
-    .title {
-        font-size: 0.6rem;
-    }
-    .glass-end-title {
-        font-size: 0.5rem;
-    }
     .slider-container {
         height: 20vh;
     }
@@ -476,7 +472,7 @@ main {
     .slider-container button {
         font-size: 0.4rem;
     }
-}
+} */
 
 .catalog-title {
     margin: 20px 0;

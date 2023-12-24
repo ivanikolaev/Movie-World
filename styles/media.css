@@ -225,7 +225,6 @@
 @media (max-width: 600px) {
     .media-container {
         transform: translateX(7%);
-        margin: 20px;
         grid-template-areas: 
         "one   six"
         "two six"
