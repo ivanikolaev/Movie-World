@@ -430,11 +430,11 @@ main {
 
     .slider-container {
         height: 25dvh;
-        width: 95dvw;
+        width: 96dvw;
     }
 
     .content .info {
-        font-size: 0.52rem;
+        font-size: 0.5rem;
     }
 
     .slider-container button {
@@ -747,7 +747,7 @@ main {
 @media (max-width: 600px){
     .glass-card {
         height: 25dvh;
-        width: 25dvw;
+        width: 26dvw;
     }
     .glass-content {
         border-radius: 7px;
