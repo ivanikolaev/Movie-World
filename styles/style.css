@@ -434,7 +434,7 @@ main {
     }
 
     .content .info {
-        font-size: 0.5rem;
+        font-size: 0.49rem;
     }
 
     .slider-container button {
@@ -747,7 +747,7 @@ main {
 @media (max-width: 600px){
     .glass-card {
         height: 25dvh;
-        width: 27dvw;
+        width: 26dvw;
     }
     .glass-content, .glass-button {
         font-size: 0.6rem;
