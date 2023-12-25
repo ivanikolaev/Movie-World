@@ -139,7 +139,7 @@
 .active-image {
     width: 40dvw;
     margin-top: 20px;
-    aspect-ratio: 1/2;
+    aspect-ratio: 1/4;
     max-height: 35dvh;
 }
 
@@ -219,6 +219,7 @@
 
     .active-image {
         width: 90dvw;
+        aspect-ratio: 2/1;
     }
 }
 

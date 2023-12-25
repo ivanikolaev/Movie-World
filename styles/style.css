@@ -136,7 +136,7 @@ header .logo {
     }
     
     nav ul {
-        width: 100vw;
+        width: 100dvw;
         left: 0;
     }
 }
@@ -201,12 +201,12 @@ main {
 }
 
 .marquee a {
-    width: 100vw;
+    width: 100dvw;
 }
 
 .marquee img {
     border: 1px solid goldenrod;
-    width: 9vw;
+    width: 9dvw;
     object-fit: fill;
     border-radius: 6%;
     aspect-ratio: 11/16;
@@ -219,7 +219,7 @@ main {
 
 @media (max-width: 600px) {
     .marquee img {
-        width: 18vw;
+        width: 18dvw;
     }
 
     .marquee_animation {
@@ -229,44 +229,44 @@ main {
 
 @keyframes marquee-animation {
     0% {
-        transform: translateX(0vw);
+        transform: translateX(0dvw);
     }
     25% {
-        transform: translateX(-32vw);
+        transform: translateX(-32dvw);
     }
     50% {
-        transform: translateX(0vw);
+        transform: translateX(0dvw);
     }
     75% {
-        transform: translateX(32vw);
+        transform: translateX(32dvw);
     }
     100% {
-        transform: translateX(0vw);
+        transform: translateX(0dvw);
     }
 }
 
 @keyframes marquee-animation-small {
     0% {
-        transform: translateX(0vw);
+        transform: translateX(0dvw);
     }
     25% {
-        transform: translateX(-100vw);
+        transform: translateX(-100dvw);
     }
     50% {
-        transform: translateX(0vw);
+        transform: translateX(0dvw);
     }
     75% {
-        transform: translateX(100vw);
+        transform: translateX(100dvw);
     }
     100% {
-        transform: translateX(0vw);
+        transform: translateX(0dvw);
     }
 }
 
 .slider-container {
     position: relative;
     margin: 0 15% 5% 15%;
-    height: 50vh;
+    height: 50dvh;
     box-shadow: 0 0 65px black;
 }
 
@@ -348,7 +348,7 @@ main {
 
 @media (max-width: 1300px) {
     .slider-container {
-        width: 80vw;
+        width: 80dvw;
         margin: 0 auto 5%;
     }
     .content .info {
@@ -361,7 +361,7 @@ main {
         font-size: 0.9rem;    
     }
     .content p, h1 {
-        width: 30vw;
+        width: 30dvw;
     }
 }
 
@@ -373,7 +373,7 @@ main {
         font-size: 1.3rem;
     }
     .slider-container {
-        height: 45vh;
+        height: 45dvh;
     }
     .content .info {
         font-size: 0.8rem;
@@ -383,13 +383,13 @@ main {
     }
     .catalog a, .catalog p {
         font-size: 1rem !important;
-        height: 20vh !important;
+        height: 20dvh !important;
     }
 }
 
 @media (max-width: 900px) {
     .slider-container {
-        height: 40vh;
+        height: 40dvh;
     }
     .content .info {
         font-size: 0.75rem;
@@ -404,7 +404,7 @@ main {
         font-size: 1rem;
     }
     .slider-container {
-        height: 35vh;
+        height: 35dvh;
     }
     .content .info {
         font-size: 0.65rem;
@@ -414,7 +414,7 @@ main {
     }
     .catalog a, .catalog p {
         font-size: 0.8rem !important;
-        height: 15vh !important;
+        height: 15dvh !important;
     }
 }
 
@@ -429,8 +429,8 @@ main {
     }
 
     .slider-container {
-        height: 25vh;
-        width: 90vw;
+        height: 25dvh;
+        width: 90dvw;
     }
 
     .content .info {
@@ -443,7 +443,7 @@ main {
 
     .catalog a, .catalog p {
         font-size: 0.6rem !important;
-        height: 12vh !important;
+        height: 12dvh !important;
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
@@ -569,8 +569,8 @@ main {
 }
 
 .glass-card {
-    width: 20vw;
-    height: 50vh;
+    width: 20dvw;
+    height: 50dvh;
     position: relative;
 }
 
@@ -605,6 +605,7 @@ main {
 
 .glass-card:hover::before {
     transform: scale(1.1) skewX(0deg);
+    z-index: 1;
 }
 
 .glass-content {
@@ -678,14 +679,14 @@ main {
 
 .glass-anim {
     width: 30%;
-    height: 30%;
+    aspect-ratio: 1/1;
     background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     position: absolute;
     border-radius: 15%;
     box-shadow: 0 0 5px black;
     opacity: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .glass-card:hover .glass-anim:nth-child(3) {
@@ -694,7 +695,7 @@ main {
 
 .glass-card:hover .glass-anim:nth-child(2) {
     animation: .7s infinite glass-animation2 linear alternate .2s;
-    z-index: 0;
+    z-index: 1;
 }
 
 .glass-end-title {
@@ -717,7 +718,7 @@ main {
 
 @media (max-width: 1000px){
     .glass-card {
-        height: 30vh;
+        height: 30dvh;
     }
     .glass-content, .glass-button {
         font-size: 0.7rem;
@@ -726,19 +727,26 @@ main {
 
 @media (max-width: 800px){
     .glass-card {
-        height: 25vh;
+        height: 25dvh;
+    }
+    .glass-card::before {
+        border-radius: 7px;
+    }
+    .glass-anim {
+        width: 40%;
     }
     .glass-content, .glass-button {
-        font-size: 0.5rem;
+        font-size: 0.7rem;
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 600px){
     .glass-card {
-        height: 20vh;
+        height: 25dvh;
+        width: 28dvw;
     }
     .glass-content, .glass-button {
-        font-size: 0.4rem;
+        font-size: 0.6rem;
     }
 }
 
