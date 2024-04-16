@@ -1,3 +1,3 @@
 "MovieWorld"
 
-Ссылка на Github Pages: https://ivanikolaev.github.io/
+Ссылка на Github Pages: https://ivanikolaev.github.io/Movie-World/
